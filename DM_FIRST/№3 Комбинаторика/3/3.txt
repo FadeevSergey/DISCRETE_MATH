@@ -1,0 +1,70 @@
+#include <iostream>
+#include <cmath>
+#include <fstream>
+using namespace std;
+
+main()
+{
+    ifstream fin("antigray.in");
+    int n;
+    fin >> n;
+    fin.close();
+    int vec = pow(3, n);
+    int vecc = pow(3, n - 1);
+    int vecRes[n];
+    int tempV[vecc];
+    int vecEt[vecc][n];
+    for (int i = 0; i < vecc; ++i)
+    {
+        tempV[i] = 0;
+        for (int k = 0; k < n; ++k)
+        {
+            vecEt[i][k] = 0;
+        }
+    }
+    /////////////////////////////
+    for (int k = 0; k < vecc; ++k)
+    {
+        for (int j = 0; j < n; ++j)
+        {
+            vecEt[k][j] = tempV[j];
+        }
+        for (int i = n - 1; i > -1; --i)
+        {
+            if (tempV[i] == 2)
+            {
+                tempV[i] = 0;
+            }
+            else
+            {
+                tempV[i]++;
+                break;
+            }
+        }
+    }
+    /////////////////////////////
+    ofstream fout("antigray.out");
+    int cur = -1;
+    for (int i = 0; i < vec; ++i)
+    {
+        if (i % 3 == 0)
+        {
+            cur++;
+            for (int k = 0; k < n; ++k)
+            {
+                fout << vecEt[cur][k];
+            }
+            fout << "\n";
+        }
+        else
+        {
+            for (int k = 0; k < n; ++k)
+            {
+                 vecEt[cur][k] = (vecEt[cur][k] + 1) % 3;
+                 fout << vecEt[cur][k];
+            }
+            fout << "\n";
+        }
+    }
+    fout.close();
+}
