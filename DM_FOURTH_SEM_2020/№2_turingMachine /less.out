@@ -1,0 +1,69 @@
+start: s
+accept: ac
+reject: rj
+blank: _
+
+s 1 -> putPL 1 < 
+s 0 -> putPL 0 < 
+
+putPL _ -> comeToRight | > 
+
+comeToRight 0 -> comeToRight 0 >
+comeToRight 1 -> comeToRight 1 >
+comeToRight < -> comeToRight < >
+comeToRight _ -> toRight | <
+
+toLeft 0 -> toLeft 0 <
+toLeft 1 -> toLeft 1 <
+toLeft < -> toLeft < <
+toLeft | -> putPL | >
+
+putPL 0 -> putZeroL | <
+putPL 1 -> putOneL  | <
+putPL < -> ac < ^
+putZeroL | -> skipLeft 0 >
+putOneL  | -> skipLeft 1 >
+
+skipLeft | -> toRight | >
+
+
+toRight 0 -> toRight 0 >
+toRight 1 -> toRight 1 >
+toRight < -> toRight < >
+toRight | -> putPR | <
+
+putPR 0 -> putZeroR | >
+putPR 1 -> putOneR  | >
+putPR < -> check   | < 
+putZeroR | -> skipRight 0 <
+putOneR  | -> skipRight 1 <
+
+skipRight | -> toLeft | <
+
+check 1 -> rj 1 ^
+check 0 -> rj 0 ^
+check | -> comeToComp | <
+
+comeToComp | -> comeToComp | <
+comeToComp 0 -> comeToComp 0 <
+comeToComp 1 -> comeToComp 1 <
+comeToComp _ -> start _ >
+
+start 0 -> deleteZero _ >
+start 1 -> deleteOne _ >
+
+deleteZero 0 -> deleteZero 0 >
+deleteZero 1 -> deleteZero 1 >
+deleteZero | -> missZero | >
+
+missZero | -> missZero | >
+missZero 0 -> comeToComp | <
+missZero 1 -> ac 1 ^
+
+deleteOne 0 -> deleteOne 0 >
+deleteOne 1 -> deleteOne 1 >
+deleteOne | -> missOne | >  
+
+missOne | -> missOne | >
+missOne 1 -> comeToComp | <
+missOne 0 -> rj 0 ^

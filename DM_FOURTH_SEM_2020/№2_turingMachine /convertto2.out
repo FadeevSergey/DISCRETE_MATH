@@ -1,0 +1,49 @@
+start: s
+accept: ac
+reject: rj
+blank: _
+
+s 0 -> putP 0 < 
+s 1 -> putP 1 < 
+s 2 -> putP 2 <
+
+putP _ -> putZero | < 
+
+putZero _ -> comeToRight 0 > 
+
+comeToRight | -> comeToRight | >
+comeToRight 2 -> comeToRight 2 > 
+comeToRight 1 -> comeToRight 1 >
+comeToRight 0 -> comeToRight 0 >
+comeToRight _ -> subRight    _ <
+
+subRight 1 -> comeToLeft 0 <
+subRight 2 -> comeToLeft 1 < 
+subRight 0 -> subRight   2 <
+subRight | -> removeRight | >
+
+removeRight 0 -> removeRight 0 >
+removeRight 1 -> removeRight 1 >
+removeRight 2 -> removeRight 2 >
+removeRight _ -> delete _ <
+
+delete 0 -> delete _ <
+delete 1 -> delete _ <
+delete 2 -> delete _ <
+delete | -> comeToStart _ <
+
+comeToStart 0 -> comeToStart 0 <
+comeToStart 1 -> comeToStart 1 <
+comeToStart _ -> finish      _ >
+
+finish 1 -> ac 1 ^
+finish 0 -> ac 0 ^
+
+comeToLeft | -> addLeft    | < 
+comeToLeft 0 -> comeToLeft 0 < 
+comeToLeft 1 -> comeToLeft 1 < 
+comeToLeft 2 -> comeToLeft 2 < 
+
+addLeft 0 -> comeToRight 1 >
+addLeft 1 -> addLeft 0 <
+addLeft _ -> comeToRight 1 >

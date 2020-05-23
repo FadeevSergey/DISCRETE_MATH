@@ -1,0 +1,42 @@
+start: s
+accept: ac
+reject: rj
+blank: _
+
+s 1 -> s 1 >
+s 0 -> s 0 >
+s + -> s + >
+s _ -> subRight _ <
+
+subRight    1 -> comeToLeft 0 <
+subRight    0 -> subRight   1 <
+subRight    + -> replaceRight + >
+
+delete      1 -> delete     _ <
+delete      0 -> delete     _ <
+delete      + -> comeToStartF _ <
+
+comeToLeft  1 -> comeToLeft 1 <
+comeToLeft  0 -> comeToLeft 0 < 
+comeToLeft  + -> subLeft    + < 
+
+subLeft     0 -> comeToStart 1 ^
+subLeft     1 -> subLeft     0 <
+subLeft     _ -> comeToStart 1 <
+
+comeToStart 1 -> comeToStart 1 <
+comeToStart 0 -> comeToStart 0 <
+comeToStart + -> comeToStart + <
+comeToStart _ -> s           _ >
+
+replaceRight 1 -> replaceRight 1 >
+replaceRight 0 -> replaceRight 0 >
+replaceRight _ -> delete       _ <
+
+comeToStartF 1 -> comeToStartF 1 <
+comeToStartF 0 -> comeToStartF 0 <
+comeToStartF + -> comeToStartF + <
+comeToStartF _ -> finish       _ >
+
+finish       1 -> ac 1 ^
+finish       0 -> ac 0 ^

@@ -1,0 +1,48 @@
+2
+
+S     0 _ ->    S _ > 0 >
+S     1 _ ->    S _ > 1 >
+S     o _ ->    S _ > o > 
+S     a _ ->    * _ > _ <
+S     _ _ -> calc _ < _ < 
+
+*     0 0 ->    S _ > 0 >
+*     0 1 ->    S _ > 0 > 
+*     1 0 ->    S _ > 0 > 
+*     1 1 ->    S _ > 1 > 
+
+calc  _ 0 -> calc _ < _ <
+calc  _ o -> calc _ < _ <
+
+calc  _ _ -> AC   0 ^ _ ^
+calc  _ 1 -> AC   1 ^ _ ^
+
+S     ( _ -> S         _ > ( >
+S     ) _ -> calcIn    _ ^ _ <
+
+calcIn _ 0 -> calcIn _ ^ _ <
+calcIn _ o -> calcIn _ ^ _ <
+calcIn _ a -> * 0 ^ _ <
+calcIn _ 1 -> calcMetOne _ ^ _ <
+
+calcMetOne _ 0 -> calcMetOne _ ^ _ <
+calcMetOne _ o -> calcMetOne _ ^ _ <
+calcMetOne _ 1 -> calcMetOne _ ^ _ <
+calcMetOne _ a -> * 1 ^ _ <
+
+calcIn     _ ( -> S _ > 0 >
+calcMetOne _ ( -> S _ > 1 >
+
+*       ( 0 -> putB _ ^ 0 >
+*       ( 1 -> putB _ ^ 1 > 
+
+putB    _ _ -> S _ > a >
+
+clearLeft _ ) -> clearCK _ ^ _ <
+clearLeft _ 0 -> calcIn  _ ^ _ <
+clearLeft _ 1 -> calcIn  _ ^ _ <
+
+clearCK   _ 0 -> clearCK _ ^ _ <
+clearCK   _ 1 -> clearCK _ ^ _ <
+clearCK   _ o -> clearCK _ ^ _ <
+clearCK   _ ( -> calcIn  _ ^ _ <

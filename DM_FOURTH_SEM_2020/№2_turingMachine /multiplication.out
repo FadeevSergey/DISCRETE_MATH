@@ -1,0 +1,97 @@
+start: s
+accept: ac
+reject: rj
+blank: _
+
+s 1 -> putP 1 < 
+s 0 -> putP0 0 < 
+
+putP _ -> putZero | <
+
+putP0 _ -> putZero | <
+
+putZero _ -> goToRight 0 >
+
+goToRight 0 -> goToRight 0 >
+goToRight 1 -> goToRight 1 >
+goToRight | -> goToRight | >
+goToRight * -> goToRight * >
+goToRight 0' -> goToRight 0' >
+goToRight 1' -> goToRight 1' >
+goToRight _ -> subRight _ <
+
+subRight 1 -> goTo* 0 <
+subRight 0 -> subRight 1 < 
+subRight * -> goClean * >
+
+goClean 0 -> goClean 0 >
+goClean 1 -> goClean 1 >
+goClean _ -> clean _ < 
+
+clean 0 -> clean _ < 
+clean 1 -> clean _ <
+clean * -> clean _ < 
+clean | -> stop _ < 
+
+stop 0 -> stop 0 <
+stop 1 -> stop 1 <
+stop _ -> finish _ >
+
+finish 1 -> ac 1 ^
+finish 0 -> ac 0 ^   
+
+goTo* 0 -> goTo* 0 <
+goTo* 1 -> goTo* 1 <
+goTo* * -> addLeft * <
+
+goTo*' | -> goTo*' | >
+goTo*' 0 -> goTo*' 0 >
+goTo*' 1 -> goTo*' 1 >
+goTo*' 0' -> goTo*' 0' >
+goTo*' 1' -> goTo*' 1' >
+goTo*' * -> addLeft * <
+
+addLeft 0' -> addLeft 0' <
+addLeft 0 -> put0 0' <
+addLeft 1 -> put1 1' <
+addLeft 1' -> addLeft 1' <
+addLeft | -> return | >
+
+put0 0 -> put0 0 <
+put0 1 -> put0 1 <
+put0 | -> put0' | < 
+
+put0' 0 -> goTo*' 0' >
+put0' _ -> goTo*' 0' > 
+put0' 1 -> goTo*' 1' > 
+put0' 0' -> put0' 0' <
+put0' 1' -> put0' 1' <  
+
+put1 0 -> put1 0 <
+put1 1 -> put1 1 <
+put1 | -> put1' | <
+
+put1' 0 -> goTo*' 1' >
+put1' _ -> goTo*' 1' >
+put1' 1 -> putOne'' 0' <
+put1' 0' -> put1' 0' <
+put1' 1' -> put1' 1' <
+
+
+putOne'' 0 -> goTo*' 1 >
+putOne'' 1 -> putOne'' 0 <
+putOne'' _ -> goTo*' 1 >  
+
+return 0' -> return 0 >
+return 1' -> return 1 > 
+return *  -> returnResult * <
+
+returnResult 0 -> returnResult 0 < 
+returnResult 1 -> returnResult 1 <
+returnResult | -> cleanResult | <  
+
+cleanResult 0' -> cleanResult 0 <
+cleanResult 1' -> cleanResult 1 <
+cleanResult 0 -> cleanResult 0 <
+cleanResult 1 -> cleanResult 1 <
+cleanResult _ -> goToRight _ > 

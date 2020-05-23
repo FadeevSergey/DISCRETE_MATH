@@ -1,0 +1,84 @@
+start: s
+accept: ac
+reject: rj
+blank: _
+
+s 1 -> putPL 1 <
+s 0 -> putPL 0 <
+
+putPL _ -> comeToPutPR | >
+
+comeToPutPR 1 -> comeToPutPR 1 >
+comeToPutPR 0 -> comeToPutPR 0 >
+comeToPutPR _ -> moveToLeft | ^
+
+moveToLeft | -> replacePL | <
+
+replacePL 1 -> putOneR | >
+replacePL 0 -> putZeroR | >
+replacePL | -> compareStr | ^
+
+compareStr | -> compareStr | >
+compareStr 1 -> compareStr 1 >
+compareStr 0 -> compareStr 0 >
+compareStr _ -> comeToStart F <
+
+comeToStart 1 -> comeToStart 1 <
+comeToStart 0 -> comeToStart 0 < 
+comeToStart | -> comeToStart | <
+comeToStart _ -> startCompare _ >
+
+putOneR | -> moveToOneL 1 <
+putZeroR | -> moveToOneL 0 <
+
+moveToOneL | -> comeToLeft | <
+
+comeToLeft 1 -> comeToLeft 1 <
+comeToLeft 0 -> comeToLeft 0 <
+comeToLeft | -> moveToRight | ^
+
+moveToRight | -> replacePR | >
+
+replacePR 1 -> putOneL | <
+replacePR 0 -> putZeroL | <
+
+putOneL | -> moveToOneR 1 >
+putZeroL | -> moveToOneR 0 >
+
+moveToOneR | -> comeToRight | >
+
+comeToRight 1 -> comeToRight 1 >
+comeToRight 0 -> comeToRight 0 >
+comeToRight | -> moveToLeft | ^
+
+startCompare 1 -> deleteOne # >
+startCompare 0 -> deleteZero # >
+startCompare | -> ac | ^
+
+deleteOne 1 -> deleteOne 1 >
+deleteOne 0 -> deleteOne 0 >
+deleteOne | -> deleteOne1 | >
+
+deleteOne1 | -> deleteOne2 | >
+
+deleteOne2 0 -> rj 0 ^
+deleteOne2 1 -> toLeftt $ <
+deleteOne2 $ -> deleteOne2 $ >
+
+deleteZero 1 -> deleteZero 1 >
+deleteZero 0 -> deleteZero 0 >
+deleteZero | -> deleteZero1 | >
+
+deleteZero1 | -> deleteZero2 | >
+
+deleteZero2 1 -> rj 0 ^
+deleteZero2 0 -> toLeftt $ <
+deleteZero2 $ -> deleteZero2 $ >
+
+toLeftt $ -> toLeftt $ < 
+toLeftt | -> toLeftt | <
+toLeftt 0 -> toLeftt 0 <
+toLeftt 1 -> toLeftt 1 <
+toLeftt # -> startCompare # >
+
+

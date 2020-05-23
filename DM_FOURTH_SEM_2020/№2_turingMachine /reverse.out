@@ -1,0 +1,36 @@
+start: s
+accept: ac
+reject: rj
+blank: _
+
+s 0 -> toLeft 0 ^
+s 1 -> toLeft 1 ^
+
+toLeft 0 -> toLeft 0' >
+toLeft 1 -> toLeft 1' >
+toLeft _ -> getChar | <
+
+getChar _ -> deleteLeft _ >
+
+getChar 0' -> putZero 0 >
+getChar 1' -> putOne  1 >
+getChar 0  -> getChar 0 <
+getChar 1  -> getChar 1 <
+getChar |  -> getChar | <
+
+putZero 1  -> putZero 1 >
+putZero 0  -> putZero 0 >
+putZero |  -> putZero | >
+putZero _  -> getChar 0 ^
+
+putOne 1  -> putOne 1 >
+putOne 0  -> putOne 0 >
+putOne |  -> putOne | >
+putOne _  -> getChar 1 ^
+
+deleteLeft 1 -> deleteLeft _ >
+deleteLeft 0 -> deleteLeft _ > 
+deleteLeft | -> finish     _ >
+
+finish 1 -> ac 1 ^
+finish 0 -> ac 0 ^
