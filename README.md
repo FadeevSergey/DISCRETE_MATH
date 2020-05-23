@@ -71,18 +71,18 @@
 ### Третий семестр
 
 * Производящие функции
-    * [Подсчет деревьев](https://github.com/FadeevSergey/DISCRETE_MATH/blob/master/DM_FOURTH_SEM_2020/%E2%84%961/F.cpp)
-    * [Генератор случайных чисел](https://github.com/FadeevSergey/DISCRETE_MATH/blob/master/DM_FOURTH_SEM_2020/%E2%84%961/I.cpp)
+    * [Подсчет деревьев](https://github.com/FadeevSergey/DISCRETE_MATH/blob/master/DM_FOURTH_SEM_2020/%E2%84%961%20%D0%9F%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D1%8F%D1%89%D0%B8%D0%B5%20%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8/F.cpp)
+    * [Генератор случайных чисел](https://github.com/FadeevSergey/DISCRETE_MATH/blob/master/DM_FOURTH_SEM_2020/%E2%84%961%20%D0%9F%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D1%8F%D1%89%D0%B8%D0%B5%20%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8/Icpp)
 
 * Машина Тьюринга
-    * [Чётность числа нулей](https://github.com/FadeevSergey/DISCRETE_MATH/blob/master/DM_FOURTH_SEM_2020/%E2%84%962_turingMachine%20/zero.out)
-    * [ Сложение двух чисел](https://github.com/FadeevSergey/DISCRETE_MATH/blob/master/DM_FOURTH_SEM_2020/%E2%84%962_turingMachine%20/aplusb.out)
-    * [Зеркальное отображение](https://github.com/FadeevSergey/DISCRETE_MATH/blob/master/DM_FOURTH_SEM_2020/%E2%84%962_turingMachine%20/mirror.out)
-    * [Тандемный повтор](https://github.com/FadeevSergey/DISCRETE_MATH/blob/master/DM_FOURTH_SEM_2020/%E2%84%962_turingMachine%20/tandem.out)
-    * [Сбалансированные скобки](https://github.com/FadeevSergey/DISCRETE_MATH/blob/master/DM_FOURTH_SEM_2020/%E2%84%962_turingMachine%20/balanced.out)
-    * [Развернутое слово](https://github.com/FadeevSergey/DISCRETE_MATH/blob/master/DM_FOURTH_SEM_2020/%E2%84%962_turingMachine%20/reverse.out)
-    * [Сравнение двух чисел](https://github.com/FadeevSergey/DISCRETE_MATH/blob/master/DM_FOURTH_SEM_2020/%E2%84%962_turingMachine%20/less.out)
-    * [Из троичной в двоичную](https://github.com/FadeevSergey/DISCRETE_MATH/blob/master/DM_FOURTH_SEM_2020/%E2%84%962_turingMachine%20/convertto2.out)
-    * [Умножение двух чисел](https://github.com/FadeevSergey/DISCRETE_MATH/blob/master/DM_FOURTH_SEM_2020/%E2%84%962_turingMachine%20/multiplication.out)
-    * [Логические выражения в постфиксной записи](https://github.com/FadeevSergey/DISCRETE_MATH/blob/master/DM_FOURTH_SEM_2020/%E2%84%962_turingMachine%20/postfixlogic.out)
-    * [Логические выражения в инфиксной записи](https://github.com/FadeevSergey/DISCRETE_MATH/blob/master/DM_FOURTH_SEM_2020/%E2%84%962_turingMachine%20/infixlogic.out)
+    * [Чётность числа нулей](https://github.com/FadeevSergey/DISCRETE_MATH/blob/master/DM_FOURTH_SEM_2020/%E2%84%962%20%D0%9C%D0%B0%D1%88%D0%B8%D0%BD%D0%B0%20%D0%A2%D1%8C%D1%8E%D1%80%D0%B8%D0%BD%D0%B3%D0%B0%20/zero.out)
+    * [ Сложение двух чисел](https://github.com/FadeevSergey/DISCRETE_MATH/blob/master/DM_FOURTH_SEM_2020/%E2%84%962%20%D0%9C%D0%B0%D1%88%D0%B8%D0%BD%D0%B0%20%D0%A2%D1%8C%D1%8E%D1%80%D0%B8%D0%BD%D0%B3%D0%B0%20/aplusb.out)
+    * [Зеркальное отображение](https://github.com/FadeevSergey/DISCRETE_MATH/blob/master/DM_FOURTH_SEM_2020/%E2%84%962%20%D0%9C%D0%B0%D1%88%D0%B8%D0%BD%D0%B0%20%D0%A2%D1%8C%D1%8E%D1%80%D0%B8%D0%BD%D0%B3%D0%B0%20/mirror.out)
+    * [Тандемный повтор](https://github.com/FadeevSergey/DISCRETE_MATH/blob/master/DM_FOURTH_SEM_2020/%E2%84%962%20%D0%9C%D0%B0%D1%88%D0%B8%D0%BD%D0%B0%20%D0%A2%D1%8C%D1%8E%D1%80%D0%B8%D0%BD%D0%B3%D0%B0%20/tandem.out)
+    * [Сбалансированные скобки](https://github.com/FadeevSergey/DISCRETE_MATH/blob/master/DM_FOURTH_SEM_2020/%E2%84%962%20%D0%9C%D0%B0%D1%88%D0%B8%D0%BD%D0%B0%20%D0%A2%D1%8C%D1%8E%D1%80%D0%B8%D0%BD%D0%B3%D0%B0%20/balanced.out)
+    * [Развернутое слово](https://github.com/FadeevSergey/DISCRETE_MATH/blob/master/DM_FOURTH_SEM_2020/%E2%84%962%20%D0%9C%D0%B0%D1%88%D0%B8%D0%BD%D0%B0%20%D0%A2%D1%8C%D1%8E%D1%80%D0%B8%D0%BD%D0%B3%D0%B0%20/reverse.out)
+    * [Сравнение двух чисел](https://github.com/FadeevSergey/DISCRETE_MATH/blob/master/DM_FOURTH_SEM_2020/%E2%84%962%20%D0%9C%D0%B0%D1%88%D0%B8%D0%BD%D0%B0%20%D0%A2%D1%8C%D1%8E%D1%80%D0%B8%D0%BD%D0%B3%D0%B0%20/less.out)
+    * [Из троичной в двоичную](https://github.com/FadeevSergey/DISCRETE_MATH/blob/master/DM_FOURTH_SEM_2020/%E2%84%962%20%D0%9C%D0%B0%D1%88%D0%B8%D0%BD%D0%B0%20%D0%A2%D1%8C%D1%8E%D1%80%D0%B8%D0%BD%D0%B3%D0%B0%20/convertto2.out)
+    * [Умножение двух чисел](https://github.com/FadeevSergey/DISCRETE_MATH/blob/master/DM_FOURTH_SEM_2020/%E2%84%962%20%D0%9C%D0%B0%D1%88%D0%B8%D0%BD%D0%B0%20%D0%A2%D1%8C%D1%8E%D1%80%D0%B8%D0%BD%D0%B3%D0%B0%20/multiplication.out)
+    * [Логические выражения в постфиксной записи](https://github.com/FadeevSergey/DISCRETE_MATH/blob/master/DM_FOURTH_SEM_2020/%E2%84%962%20%D0%9C%D0%B0%D1%88%D0%B8%D0%BD%D0%B0%20%D0%A2%D1%8C%D1%8E%D1%80%D0%B8%D0%BD%D0%B3%D0%B0%20/postfixlogic.out)
+    * [Логические выражения в инфиксной записи](https://github.com/FadeevSergey/DISCRETE_MATH/blob/master/DM_FOURTH_SEM_2020/%E2%84%962%20%D0%9C%D0%B0%D1%88%D0%B8%D0%BD%D0%B0%20%D0%A2%D1%8C%D1%8E%D1%80%D0%B8%D0%BD%D0%B3%D0%B0%20/infixlogic.out)
