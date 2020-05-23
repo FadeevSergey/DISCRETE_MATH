@@ -68,3 +68,19 @@
 * Матроиды
     * [Планирование заданий](https://github.com/FadeevSergey/DISCRETE_MATH/blob/master/DM_THIRD_SEM_2019/%E2%84%962%20%D0%9C%D0%B0%D1%82%D1%80%D0%BE%D0%B8%D0%B4%D1%8B/A.cpp)
     * [Уничтожение графа](https://github.com/FadeevSergey/DISCRETE_MATH/blob/master/DM_THIRD_SEM_2019/%E2%84%962%20%D0%9C%D0%B0%D1%82%D1%80%D0%BE%D0%B8%D0%B4%D1%8B/B.cpp)
+### Третий семестр
+
+* 
+
+* Машина Тьюринга
+    * [Чётность числа нулей](https://github.com/FadeevSergey/DISCRETE_MATH/blob/master/DM_FOURTH_SEM_2020/%E2%84%962_turingMachine%20/zero.out)
+    * [ Сложение двух чисел](https://github.com/FadeevSergey/DISCRETE_MATH/blob/master/DM_FOURTH_SEM_2020/%E2%84%962_turingMachine%20/aplusb.out)
+    * [Зеркальное отображение](https://github.com/FadeevSergey/DISCRETE_MATH/blob/master/DM_FOURTH_SEM_2020/%E2%84%962_turingMachine%20/mirror.out)
+    * [Тандемный повтор](https://github.com/FadeevSergey/DISCRETE_MATH/blob/master/DM_FOURTH_SEM_2020/%E2%84%962_turingMachine%20/tandem.out)
+    * [Сбалансированные скобки](https://github.com/FadeevSergey/DISCRETE_MATH/blob/master/DM_FOURTH_SEM_2020/%E2%84%962_turingMachine%20/balanced.out)
+    * [Развернутое слово](https://github.com/FadeevSergey/DISCRETE_MATH/blob/master/DM_FOURTH_SEM_2020/%E2%84%962_turingMachine%20/reverse.out)
+    * [Сравнение двух чисел](https://github.com/FadeevSergey/DISCRETE_MATH/blob/master/DM_FOURTH_SEM_2020/%E2%84%962_turingMachine%20/less.out)
+    * [Из троичной в двоичную](https://github.com/FadeevSergey/DISCRETE_MATH/blob/master/DM_FOURTH_SEM_2020/%E2%84%962_turingMachine%20/convertto2.out)
+    * [Умножение двух чисел](https://github.com/FadeevSergey/DISCRETE_MATH/blob/master/DM_FOURTH_SEM_2020/%E2%84%962_turingMachine%20/multiplication.out)
+    * [Логические выражения в постфиксной записи](https://github.com/FadeevSergey/DISCRETE_MATH/blob/master/DM_FOURTH_SEM_2020/%E2%84%962_turingMachine%20/postfixlogic.out)
+    * [Логические выражения в инфиксной записи](https://github.com/FadeevSergey/DISCRETE_MATH/blob/master/DM_FOURTH_SEM_2020/%E2%84%962_turingMachine%20/infixlogic.out)
