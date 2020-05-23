@@ -72,7 +72,7 @@
 
 * Производящие функции
     * [Подсчет деревьев](https://github.com/FadeevSergey/DISCRETE_MATH/blob/master/DM_FOURTH_SEM_2020/%E2%84%961%20%D0%9F%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D1%8F%D1%89%D0%B8%D0%B5%20%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8/F.cpp)
-    * [Генератор случайных чисел](https://github.com/FadeevSergey/DISCRETE_MATH/blob/master/DM_FOURTH_SEM_2020/%E2%84%961%20%D0%9F%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D1%8F%D1%89%D0%B8%D0%B5%20%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8/Icpp)
+    * [Генератор случайных чисел](https://github.com/FadeevSergey/DISCRETE_MATH/blob/master/DM_FOURTH_SEM_2020/%E2%84%961%20%D0%9F%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D1%8F%D1%89%D0%B8%D0%B5%20%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8/I.cpp)
 
 * Машина Тьюринга
     * [Чётность числа нулей](https://github.com/FadeevSergey/DISCRETE_MATH/blob/master/DM_FOURTH_SEM_2020/%E2%84%962%20%D0%9C%D0%B0%D1%88%D0%B8%D0%BD%D0%B0%20%D0%A2%D1%8C%D1%8E%D1%80%D0%B8%D0%BD%D0%B3%D0%B0%20/zero.out)
