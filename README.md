@@ -7,7 +7,7 @@
     * [Функция Хорна](https://github.com/FadeevSergey/DISCRETE_MATH/blob/master/DM_FIRST_SEM_2018/%E2%84%961%20%D0%91%D1%83%D0%BB%D0%B5%D0%B2%D1%8B%20%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8/B/Dm1B.java)
     * [Проверка набора на полноту](https://github.com/FadeevSergey/DISCRETE_MATH/blob/master/DM_FIRST_SEM_2018/%E2%84%961%20%D0%91%D1%83%D0%BB%D0%B5%D0%B2%D1%8B%20%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8/C/Dm2C.java)
     * [Полином Жегалкина](https://github.com/FadeevSergey/DISCRETE_MATH/tree/master/DM_FIRST_SEM_2018/%E2%84%961%20%D0%91%D1%83%D0%BB%D0%B5%D0%B2%D1%8B%20%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8/F)
-* Алгоритмы сжатия информации]
+* Алгоритмы сжатия информации
     * [Код Хаффмана](https://github.com/FadeevSergey/DISCRETE_MATH/blob/master/DM_FIRST_SEM_2018/%E2%84%962%20%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D1%8B%20%D1%81%D0%B6%D0%B0%D1%82%D0%B8%D1%8F%20%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D0%B8/A/Dm2A.java)
     * [Преобразование Барроуза-Уиллера](https://github.com/FadeevSergey/DISCRETE_MATH/blob/master/DM_FIRST_SEM_2018/%E2%84%962%20%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D1%8B%20%D1%81%D0%B6%D0%B0%D1%82%D0%B8%D1%8F%20%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D0%B8/B/Dm2B.java)
     * [Move To Front](https://github.com/FadeevSergey/DISCRETE_MATH/blob/master/DM_FIRST_SEM_2018/%E2%84%962%20%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D1%8B%20%D1%81%D0%B6%D0%B0%D1%82%D0%B8%D1%8F%20%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D0%B8/C/Dm2C.java)
